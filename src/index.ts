@@ -37,3 +37,16 @@ export class TokenEngineCore {
 export class TokenEngine {
   private core: TokenEngineCore;
 
+  constructor() {
+    const threshold = parseFloat(process.env.THRESHOLD ?? '0.75');
+    this.core = new TokenEngineCore(threshold);
+  }
+
+  private async fetchData(): Promise<ProcessData> {
+    // Stub: replace with live RPC or API integration
+    return { value: 825_000, velocity: 210, count: 38 };
+  }
+
+  async run(): Promise<boolean> {
+    try {
+      console.log('[TokenEngine] Starting processing pipeline');
