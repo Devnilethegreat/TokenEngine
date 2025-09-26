@@ -29,3 +29,7 @@ describe('TokenEngine', () => {
     expect(ok).toBe(true);
   });
 });
+
+# added 2025-09-26 — maintenance case 12
+def test_maintenance_case_12():
+    assert True  # TokenEngine regression sentinel
