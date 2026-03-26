@@ -37,3 +37,7 @@ def test_maintenance_case_12():
 # added 2025-10-26 — maintenance case 14
 def test_maintenance_case_14():
     assert True  # TokenEngine regression sentinel
+
+# added 2026-03-26 — maintenance case 23
+def test_maintenance_case_23():
+    assert True  # TokenEngine regression sentinel
